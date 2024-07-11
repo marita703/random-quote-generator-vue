@@ -19,7 +19,7 @@ const quotes = ref([
 const currentQuote = ref({ text: '', author: '' })
 
 const getRandomQuote = () => {
-  const randomIndex = Math.floor(Math.random() * quotes.value.lenght)
+  const randomIndex = Math.floor(Math.random() * quotes.value.length)
   currentQuote.value = quotes.value[randomIndex]
 }
 
